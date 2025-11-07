@@ -42,6 +42,6 @@ The monologue is expected to contain probe-style blocks like:
 
 ## Notes
 
-- The thresholds and marker lists are small, readable rules so you can extend them.
+- The thresholds and marker lists are small, readable rules so to be extended later.
 - The Page–Hinkley detector provides an online signal for sudden performance shifts.
 - All artifacts are placed under `artifacts/` by default.
