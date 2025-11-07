@@ -1,0 +1,18 @@
+dualstream_anticollapse/
+├─ dualstream_anticollapse/
+│  ├─ __init__.py
+│  ├─ config.py                # thresholds, retraining policy
+│  ├─ metrics.py               # accuracy/precision/recall/F1 + AUC/log-loss
+│  ├─ drift.py                 # PSI, KS test, Page–Hinkley (concept drift)
+│  ├─ edge.py                  # z-score outlier detection for edge cases
+│  ├─ alerts.py                # stdout/file alert sink
+│  ├─ governance.py            # model save/load, sha256, lightweight registry
+│  ├─ retrain.py               # SGDClassifier/RandomForest with partial_fit
+│  ├─ coherence.py             # Dual‑Stream Coherence Auditor (see below)
+│  └─ cli.py                   # CLI: train / monitor / audit-dual
+├─ demo/
+│  ├─ reference.csv            # synthetic ref dataset
+│  ├─ current.csv              # synthetic drifted batch
+│  ├─ dual_stream_sample.jsonl # two Dual‑Stream examples (coherent + deceptive)
+│  └─ runtime_guard.py         # tiny “allow/block” gateway demo for answers
+└─ README.md
